@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="/App.css">
+</head>
+
+<body>
+    <%- include('navbar') %>
+        <div class="container">
+            <h1 style="background-color: black; color: white; padding: 10px; text-align: center;">Contacto</h1>
+
+            <form action="/submit" method="post" class="contact-form" style="color: white">
+                    <label for=" name">Nombre:</label>
+                <input type="text" id="name" name="name" required><br>
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required><br>
+                <label for="message">Mensaje:</label><br>
+                <textarea id="message" name="message" rows="4" cols="50" required></textarea><br>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+
+</body>
+
+</html>

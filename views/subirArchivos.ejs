@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subir Archivo</title>
+    <link rel="stylesheet" href="/App.css">
+</head>
+
+<body>
+    <%- include('navbar') %>
+        <div class="container">
+            <h1 style="background-color: black; color: white; padding: 10px; text-align: center;">Subir Archivos</h1>
+            <div class="Form-container">
+                <h2>Subir una imagen</h2>
+                <form action="/upload/image" method="post" enctype="multipart/form-data">
+                    <input type="file" name="image" />
+                    <button type="submit">Subir imagen</button>
+                </form>
+
+                <h2>Subir un archivo</h2>
+                <form action="/upload/file" method="post" enctype="multipart/form-data">
+                    <input type="file" name="file" />
+                    <button type="submit">Subir archivo</button>
+                </form>
+            </div>
+        </div>
+</body>
+
+</html>
